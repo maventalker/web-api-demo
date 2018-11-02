@@ -1,0 +1,24 @@
+server:
+  session-timeout: 1800
+  port: 8082
+  
+spring:
+  profiles: 
+    active: dev
+
+#service version config
+service:
+  version: 1.0.0
+  
+#dubbo config
+dubbo:
+  application:
+    id: web-api-demo
+    name: web-api-demo
+  protocol:
+    id: dubbo
+    name: dubbo
+    port: 20881
+  consumer:
+    check: false
+    timeout: 2000
