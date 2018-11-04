@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.alibaba.dubbo.config.annotation.Reference;
+import com.growithus.service.demo.ifc.channel.DemoService;
 
 /**
  * test controller
@@ -15,21 +16,27 @@ import com.alibaba.dubbo.config.annotation.Reference;
 @RestController
 public class APITestController {
 
-	/*@Reference(version = "${service.version}", mock = "true")
+	@Reference(version = "${service.version}", mock = "true",async = true)
 	private DemoService demoService;
 
-	*//**
+	/**
 	 * 调用后端dubbo服务
 	 * 
 	 * @param input
 	 * @return
-	 *//*
+	 */
 	@RequestMapping(value = "rand", method = RequestMethod.POST)
 	public String get(String input) {
 		return demoService.hello("demo");
-	}*/
-	
-	@RequestMapping(value = "getActDtl",method = RequestMethod.POST)
+	}
+
+	/**
+	 * 简单测试案例
+	 * 
+	 * @param tid
+	 * @return
+	 */
+	@RequestMapping(value = "getActDtl", method = RequestMethod.POST)
 	public String getAccountDetail(String tid) {
 		return "hello detail";
 	}
