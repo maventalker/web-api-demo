@@ -1,23 +1,26 @@
-面向移动端开发的API服务脚手架，代码位置：https://github.com/backkoms/web-api-demo.git
+###简介:
+面向移动端（手机App，公众号，小程序.....）提供的API服务脚手架开发框架，项目代码：https://github.com/backkoms/web-api-demo.git，可用于实施基于Dubbo的分布式/微服务项目开发、重构等等，下载到本地，包名稍做调整即可关注业务进行API开发。
 ![](arc.png)
 
-项目定位：
->面向移动端的API服务，不处理业务逻辑，调用后端的dubbo服务处理。
-用于从大单体应用中解耦，实施前后端分离部署、分层部署。
+###项目定位：
+>面向移动端提供API服务，不处理具体业务逻辑，需调用后端的[Dubbo]服务处理。可用于从大单体应用中解耦，实施前后端分离部署、分层部署。
 
 >可配合web-service-demo使用。
 APITestController.java文件中DemoService接口依赖web-service-demo中的web-service-i模块，若暂无需求可将其注释掉。
 
 ###技术组件：
-- spring boot 2
-- swagger 2
-- dubbo-spring-boot-starter 2
-- JDK 8+
+- Spring Boot 2.0.4.RELEASE
+- Swagger 2.6.1
+- Dubbo-spring-boot-starter 0.2.0
+- Lombok 1.16
 
 ###提供功能：
-- swagger集成，对外提供友好的api界面
+- Swagger集成，对外提供友好的API界面
 - 基于profiles提供的多环境打包构建
-- 集成Log4j日志服务
+- 集成Log4j日志服务，替代原有的logging日志组件
+- 集成lombok，简化实体的编写
+- 结合AOP，实现简单的安全验证，如接口验签、接口速率限制、黑白名单（结合具体业务场景实现）
+- 集成Docker构建插件，可打包成Docker镜像运行
 
 #联系我
 
