@@ -19,6 +19,8 @@ import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
 /**
+ * 日志记录
+ * 
  * @author guooo 2018年10月25日 下午2:05:16
  * 
  */
