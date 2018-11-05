@@ -12,7 +12,7 @@ import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
- * C端App的API服务
+ * API服务
  * 
  * @author guooo 2018年10月25日 下午1:43:40
  * 

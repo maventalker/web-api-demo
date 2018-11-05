@@ -5,7 +5,8 @@
 >面向移动端的API服务，不处理业务逻辑，调用后端的dubbo服务处理。
 用于从大单体应用中解耦，实施前后端分离部署、分层部署。
 
->配合web-service-demo使用
+>可配合web-service-demo使用。
+APITestController.java文件中DemoService接口依赖web-service-demo中的web-service-i模块，若暂无需求可将其注释掉。
 
 ###技术组件：
 - spring boot 2
