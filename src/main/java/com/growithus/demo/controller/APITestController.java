@@ -10,7 +10,7 @@ import com.growithus.service.demo.ifc.channel.DemoService;
 /**
  * test controller
  * 
- * @author guooo 2018年10月25日 下午1:49:57
+ * @author guooo 公众号：growithus 2018年10月25日 下午1:49:57
  * 
  */
 @RestController

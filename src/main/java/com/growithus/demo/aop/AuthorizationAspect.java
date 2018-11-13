@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
  * Function: 请求参数合法性验证<br/>
  * Date: 2018年10月16日 上午10:44:35 <br/>
  * 
- * @author guooo
+ * @author guooo 公众号：growithus
  * @version
  * @since JDK 1.6
  * @see

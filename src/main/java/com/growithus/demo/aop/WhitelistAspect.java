@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
  * Function: 白名单限制<br/>
  * Date: 2018年10月16日 上午10:43:48 <br/>
  * 
- * @author guooo
+ * @author guooo 公众号：growithus
  * @version
  * @since JDK 1.6
  * @see

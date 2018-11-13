@@ -21,7 +21,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 /**
  * 日志记录
  * 
- * @author guooo 2018年10月25日 下午2:05:16
+ * @author guooo 公众号：growithus 2018年10月25日 下午2:05:16
  * 
  */
 @Aspect

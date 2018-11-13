@@ -8,7 +8,7 @@ import com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo;
 /**
  * 启动类
  * 
- * @author guooo 2018年11月2日 下午10:43:42
+ * @author guooo 公众号：growithus 2018年11月2日 下午10:43:42
  * 
  */
 @SpringBootApplication

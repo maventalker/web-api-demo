@@ -14,7 +14,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 /**
  * API服务
  * 
- * @author guooo 2018年10月25日 下午1:43:40
+ * @author guooo 公众号：growithus 2018年10月25日 下午1:43:40
  * 
  */
 @EnableSwagger2
