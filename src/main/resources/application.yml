@@ -3,9 +3,19 @@ server:
   port: 8082
   
 spring:
+  application:
+    name: web-api-demo
   profiles: 
     active: dev
 
+trace:
+  brave:
+    name: web-api-demo-consumer
+    address: http://127.0.0.1:9411/api/v2/spans
+    rate: 1.0
+    connectTimeout: 5000
+    readTimeout: 5000
+    
 #service version config
 service:
   version: 1.0.0
@@ -22,3 +32,6 @@ dubbo:
   consumer:
     check: false
     timeout: 2000
+    filter: tracing
+  provider:
+    filter: tracing

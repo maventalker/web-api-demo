@@ -10,38 +10,43 @@
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.0.4.RELEASE</version>
 	</parent>
-	
+
 	<properties>
 		<java.version>1.8</java.version>
 		<!-- skip the test junit -->
 		<skipTests>true</skipTests>
+		<brave.version>5.4.2</brave.version>
+		<zipkin-reporter.version>2.7.9</zipkin-reporter.version>
 	</properties>
-	
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>io.zipkin.brave</groupId>
+				<artifactId>brave-bom</artifactId>
+				<version>${brave.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>io.zipkin.reporter2</groupId>
+				<artifactId>zipkin-reporter-bom</artifactId>
+				<version>${zipkin-reporter.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-			<exclusions>
-				<exclusion>
-					<artifactId>log4j-over-slf4j</artifactId>
-					<groupId>org.slf4j</groupId>
-				</exclusion>
-			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
-			<exclusions>
-				<exclusion>
-					<groupId>org.springframework.boot</groupId>
-					<artifactId>spring-boot-starter-logging</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-log4j</artifactId>
-			<version>1.3.1.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -79,7 +84,11 @@
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 		</dependency>
-		
+		<!-- brave -->
+
+
+
+
 		<!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
 		<dependency>
 			<groupId>com.alibaba</groupId>
@@ -101,7 +110,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			
+
 			<!-- Docker maven plugin -->
 			<plugin>
 				<groupId>com.spotify</groupId>

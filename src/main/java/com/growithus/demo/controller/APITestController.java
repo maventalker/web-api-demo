@@ -16,7 +16,7 @@ import com.growithus.service.demo.ifc.channel.DemoService;
 @RestController
 public class APITestController {
 
-	@Reference(version = "${service.version}", mock = "true",async = true)
+	@Reference(version = "${service.version}")
 	private DemoService demoService;
 
 	/**

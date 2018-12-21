@@ -1,10 +1,10 @@
 package com.growithus.demo.aop;
 
-import org.apache.log4j.Logger;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
+import org.slf4j.Logger;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
@@ -23,7 +23,6 @@ import org.springframework.stereotype.Component;
 @Order(5)
 @Component
 public class AuthorizationAspect {
-    private Logger logger = Logger.getLogger(AuthorizationAspect.class);
 
 //    @Autowired
 //    AuthorizeService authorizeService;

@@ -3,11 +3,12 @@ package com.growithus.demo.aop;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.apache.log4j.Logger;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
@@ -25,7 +26,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Order(2)
 public class WhitelistAspect {
-    private Logger logger = Logger.getLogger(WhitelistAspect.class);
+    private Logger logger = LoggerFactory.getLogger(getClass());
 
 //    @Autowired
 //    RedisSpecCacheService redisSpecCacheService;

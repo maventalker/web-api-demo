@@ -9,7 +9,8 @@
 
 package com.growithus.demo.config;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
@@ -28,7 +29,7 @@ import com.alibaba.fastjson.JSONObject;
 public class MyExceptionHandler {
 
     
-    Logger logger = Logger.getLogger(getClass());
+    Logger logger = LoggerFactory.getLogger(getClass());
 
     @ExceptionHandler(Exception.class)
     public String handleException(Exception e) {
