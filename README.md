@@ -39,7 +39,7 @@ https://gitee.com/Kristening/web-service-demo
 
 #联系我
 
-![](qrcode_for_gh_28fb95c9c24c_258.jpg)
+![](https://imgkr.cn-bj.ufileos.com/83875e9c-ec96-4a9c-90c6-dd3c7c4e3e19.jpeg)
 
 微信号：Dqango
 
