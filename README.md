@@ -3,6 +3,7 @@
 面向移动端（手机App，公众号，小程序.....）提供的API服务脚手架开发框架，项目代码：
 
 >[https://github.com/backkoms/web-api-demo](https://github.com/backkoms/web-api-demo)
+>
 >[https://gitee.com/Kristening/web-api-demo](https://gitee.com/Kristening/web-api-demo)
 
 可用于实施基于Dubbo的分布式/微服务项目开发、重构等等，下载到本地，包名稍做调整即可关注业务进行API开发。
@@ -30,6 +31,7 @@ APITestController.java文件中DemoService接口依赖web-service-demo中的web-
 
 >注：web-service-demo的Github项目地址：
 https://github.com/backkoms/web-service-demo
+
 https://gitee.com/Kristening/web-service-demo
 基于SpringBoot2和Dubbo的微服务开发框架，已集成Rabbitmq、Redis、Mybatis。
 
@@ -42,3 +44,4 @@ https://gitee.com/Kristening/web-service-demo
 
 #SpringCloud微服务实战实例
 [https://github.com/backkoms/simplemall](https://github.com/backkoms/simplemall)
+[源码解读](https://xiaozhuanlan.com/msa-practice)
